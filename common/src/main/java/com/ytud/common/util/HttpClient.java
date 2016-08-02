@@ -63,6 +63,7 @@ public class HttpClient {
                 case HTTP_GET:
                     httpGet = new HttpGet(url);
                     response = httpClient.execute(httpGet);
+                    
                     break;
             }
             //result.getStatusLine().getStatusCode() == 200
