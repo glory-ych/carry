@@ -4,7 +4,6 @@ import com.ytud.api.ProjectApi;
 import com.ytud.common.model.ProjectModel;
 import com.ytud.dao.mybatis.po.Project;
 import com.ytud.provider.service.ProjectService;
-import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
@@ -18,6 +17,7 @@ public class ProjectApiImpl implements ProjectApi {
 
     
     public ProjectModel getProject(int id) {
+        System.out.println("start...");
         Project project = projectService.getProject(id);
         return new ProjectModel(project.getId(), project.getProjectCode(), project.getProjectName());
     }
