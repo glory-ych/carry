@@ -20,7 +20,7 @@ public class ProjectApiImpl implements ProjectApi {
         System.out.println("start...");
         Project project = projectService.getProject(id);
 
-        System.out.println("end...");
+        System.out.println("end...master");
         return new ProjectModel(project.getId(), project.getProjectCode(), project.getProjectName());
     }
 }
